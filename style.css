@@ -40,3 +40,10 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+.tabs .active{
+    background: linear-gradient(145deg, #d1d9e6, #ffffff);
+    box-shadow: inset 2px 2px 5px #bec3e9,
+                inset -2px -2px 5px #ffffff;
+}
+
