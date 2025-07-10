@@ -20,3 +20,9 @@ body{
     width: 300px;
     transition: height 0.3s ease;
 }
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
