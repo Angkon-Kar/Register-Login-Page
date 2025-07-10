@@ -92,3 +92,9 @@ body{
   color: #555;
   transition: all 0.3s ease;
 }
+
+.input-group input:focus{
+    outline: none;
+    box-shadow: inset 2px 2px 5px #bec3e9,
+                inset -2px -2px 5px #ffffff;
+}
