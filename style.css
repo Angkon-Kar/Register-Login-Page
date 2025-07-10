@@ -166,3 +166,16 @@ body{
     font-size: 14px;
     color: #777;
 }
+
+.forgot-password {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+    display: block;
+}
+
+.forgot-password:hover {
+    color: #555;
+}
