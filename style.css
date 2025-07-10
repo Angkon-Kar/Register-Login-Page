@@ -47,3 +47,17 @@ body{
                 inset -2px -2px 5px #ffffff;
 }
 
+.form-container{
+    position: relative;
+}
+
+.form{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
