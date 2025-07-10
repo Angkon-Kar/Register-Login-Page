@@ -11,3 +11,12 @@ body{
     margin: 0;
     padding: 20px;
 }
+
+.container{
+    background: #e0e5ec;
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 10px 10px 30px #bec3e9, -10px -10px 30px #ffffff;
+    width: 300px;
+    transition: height 0.3s ease;
+}
