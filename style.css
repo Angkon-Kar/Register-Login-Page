@@ -68,3 +68,14 @@ body{
     position: relative;
     pointer-events: all;
 }
+
+.input-group{
+    margin-bottom: 1rem;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
