@@ -128,3 +128,36 @@ body{
     margin-right: 5px;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: #e0e5ec;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #bec3c9,
+                -5px -5px 10px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    box-shadow: 3px 3px 8px #bec3c9,
+                -3px -3px 8px #ffffff;
+}
+
+.social-icon:active {
+    box-shadow: inset 2px 2px 5px #bec3c9,
+                inset -2px -2px 5px #ffffff;
+}
+
+
