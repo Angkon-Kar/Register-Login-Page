@@ -36,5 +36,26 @@ function registerUser(){
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
 
-    
+    if(!name || !email || !password || !confirmPassword){
+        alert("Please fill out all fields.");
+        return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailRegex.test(email)){
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    if(password !== confirmPassword){
+        alert("Passwords don't match.");
+        return;
+    }
+
+    if(password.length < 6){
+        alert("Password must be at least 6 Characters long.");
+        return;
+    }
+
+    alert(`Welcome ${name}! Registration Successful.`);
 }
