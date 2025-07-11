@@ -97,3 +97,22 @@ function checkPasswordStrength() {
       break;
   }
 }
+
+function checkPasswordMatch() {
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+  const matchMessage = document.getElementById("matchMessage");
+
+  if (confirmPassword === "") {
+    matchMessage.textContent = "";
+    return;
+  }
+
+  if (password === confirmPassword) {
+    matchMessage.textContent = "✅ Passwords match";
+    matchMessage.style.color = "green";
+  } else {
+    matchMessage.textContent = "❌ Passwords do not match";
+    matchMessage.style.color = "red";
+  }
+}

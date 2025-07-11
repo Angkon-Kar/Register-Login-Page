@@ -57,7 +57,8 @@
 
                 <div class="input-group">
                     <label>Confirm Password</label>
-                    <input type="password" id="confirmPassword" placeholder="Confirm Password"/>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" oninput="checkPasswordMatch()"/>
+                    <p id="matchMessage"></p>
                 </div>
 
                 <button class="submit-btn" onclick="registerUser()">
