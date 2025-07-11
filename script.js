@@ -5,3 +5,9 @@ function showLogin(){
     document.getElementById('registerForm').classList.remove('active');
 }
 
+function showRegister(){
+    document.getElementById('registerBtn').classList.add('active');
+    document.getElementById('loginBtn').classList.remove('active');
+    document.getElementById('registerForm').classList.add('active');
+    document.getElementById('loginForm').classList.remove('active');    
+}
