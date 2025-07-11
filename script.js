@@ -11,3 +11,13 @@ function showRegister(){
     document.getElementById('registerForm').classList.add('active');
     document.getElementById('loginForm').classList.remove('active');    
 }
+
+function loginUser(){
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+
+    if(!email || !password){
+        alert("Please fill out all fields.");
+        return;
+    }
+}
