@@ -50,12 +50,14 @@
 
                 <div class="input-group">
                     <label>Password</label>
-                    <input type="password" id="password"/>
+                    <input type="password" id="password" placeholder="Password" oninput="checkPasswordStrength()"/>
+                    <div id="strengthBar"></div>
+                    <p id="strengthText"></p>
                 </div>
 
                 <div class="input-group">
                     <label>Confirm Password</label>
-                    <input type="password" id="confirmPassword"/>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password"/>
                 </div>
 
                 <button class="submit-btn" onclick="registerUser()">

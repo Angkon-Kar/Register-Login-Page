@@ -59,3 +59,41 @@ function registerUser(){
 
     alert(`Welcome ${name}! Registration Successful.`);
 }
+
+function checkPasswordStrength() {
+  const password = document.getElementById("password").value;
+  const strengthBar = document.getElementById("strengthBar");
+  const strengthText = document.getElementById("strengthText");
+
+  let strength = 0;
+
+  if (password.length >= 6) strength++;
+  if (/[a-z]/.test(password)) strength++;
+  if (/[A-Z]/.test(password)) strength++;
+  if (/[0-9]/.test(password)) strength++;
+  if (/[^a-zA-Z0-9]/.test(password)) strength++;
+
+  switch (strength) {
+    case 0:
+    case 1:
+      strengthBar.style.background = "red";
+      strengthText.textContent = "Very Weak";
+      break;
+    case 2:
+      strengthBar.style.background = "orange";
+      strengthText.textContent = "Weak";
+      break;
+    case 3:
+      strengthBar.style.background = "gold";
+      strengthText.textContent = "Moderate";
+      break;
+    case 4:
+      strengthBar.style.background = "blue";
+      strengthText.textContent = "Strong";
+      break;
+    case 5:
+      strengthBar.style.background = "green";
+      strengthText.textContent = "Very Strong";
+      break;
+  }
+}
