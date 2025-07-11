@@ -27,7 +27,7 @@ function loginUser(){
         return;
     }
 
-    alert(`Welcome back! Login Successful for ${email}`);
+    alert(`Welcome back! Login successful for ${email}`);
 }
 
 function registerUser(){
@@ -48,7 +48,7 @@ function registerUser(){
     }
 
     if(password !== confirmPassword){
-        alert("Passwords don't match.");
+        alert("Passwords do not match.");
         return;
     }
 
