@@ -20,4 +20,12 @@ function loginUser(){
         alert("Please fill out all fields.");
         return;
     }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailRegex.test(email)){
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    alert(`Welcome back! Login Successful for ${email}`);
 }
