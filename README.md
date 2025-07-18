@@ -2,8 +2,9 @@
 
 A simple, responsive Register and Login Page built using **HTML**, **CSS**, and **JavaScript**. This project demonstrates basic frontend form handling, UI design, and client-side validation principles.
 
-🌐 **Live Demo**: [Click here to view](https://angkon-kar.github.io/Register-Login-Page/)
-
+🌐 **Live Demo**: [From Github.io](https://angkon-kar.github.io/Register-Login-Page/) 
+                  [From Netlify](https://akregisterloginpage1.netlify.app/)
+                  
 ---
 
 ## 🚀 Features
